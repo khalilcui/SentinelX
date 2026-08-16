@@ -4,8 +4,7 @@
   "description": "SentinelX - Security Assessment Platform",
   "private": true,
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "dev": "echo 'Run: cd frontend && npm run dev for frontend, cd backend && python -m uvicorn app.main:app --reload for backend'"
+    "build": "cd frontend && npm install && npm run build"
   },
   "keywords": [
     "security",
