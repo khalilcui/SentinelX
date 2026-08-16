@@ -1,0 +1,7 @@
+venv
+__pycache__
+*.pyc
+.env
+sentinelx.db
+generated_reports
+.git
