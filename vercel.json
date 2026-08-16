@@ -1,20 +1,11 @@
 {
-  "buildCommand": "npm install --prefix frontend && npm run build --prefix frontend",
-  "installCommand": "npm install --prefix frontend",
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "framework": "vite",
   "env": {
-    "VITE_API_URL": "@vite_api_url"
-  },
-  "functions": {
-    "api/**: {
-      "runtime": "python@3.9"
+    "VITE_API_URL": {
+      "default": "http://localhost:8000"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "http://localhost:8000/api/:path*"
-    }
-  ]
+  }
 }
